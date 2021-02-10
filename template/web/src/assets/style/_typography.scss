@@ -1,0 +1,179 @@
+@import "~@fontsource/source-code-pro/400.css";
+@import "~@fontsource/source-code-pro/400-italic.css";
+@import "~@fontsource/source-sans-pro/400.css";
+@import "~@fontsource/source-sans-pro/400-italic.css";
+@import "~@fontsource/source-sans-pro/700.css";
+@import "~@fontsource/source-sans-pro/700-italic.css";
+
+:root {
+  --font-family-primary: 'Source Sans Pro', sans-serif;
+  --font-family-heading: 'Source Code Pro', monospace;
+  --headings-font-weight: 400;
+  --body-font-weight: 400;
+
+  --h1-font-size-desktop: 48px;
+  --h1-line-height-desktop: 1.5;
+  --h1-font-size-mobile: 25px;
+  --h1-line-height-mobile: 25px;
+  --h1-letter-spacing-desktop: 5px;
+  --h1-letter-spacing-mobile: 2px;
+
+  --h2-font-size-desktop: 25px;
+  --h2-line-height-desktop: 32px;
+  --h2-font-size-mobile: 18px;
+  --h2-line-height-mobile: 25px;
+  --h2-letter-spacing-desktop: 3px;
+  --h2-letter-spacing-mobile: 2px;
+
+  --h3-font-size-desktop: 17px;
+  --h3-line-height-desktop: 23px;
+  --h3-font-size-mobile: 13px;
+  --h3-line-height-mobile: 18px;
+  --h3-letter-spacing-desktop: 2px;
+  --h3-letter-spacing-mobile: 1px;
+
+  --h4-font-size-desktop: 14px;
+  --h4-line-height-desktop: 28px;
+  --h4-font-size-mobile: 9px;
+  --h4-line-height-mobile: 14px;
+
+  --h5-font-size-desktop: 10px;
+  --h5-line-height-desktop: 16px;
+  --h5-font-size-mobile: 13px;
+  --h5-line-height-mobile: 20px;
+
+  --body-font-size: 13px;
+  --body-line-height: 18px;
+
+  --link-font-size: 12px;
+  --link-line-height: 1;
+}
+
+@mixin body-font {
+  font-family: var(--font-family-primary);
+}
+
+@mixin headings-font {
+  font-family: var(--font-family-heading);
+}
+
+body {
+  @include body-font;
+
+  font-weight: var(--body-font-weight);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+}
+
+@mixin h1 {
+  @include headings-font;
+
+  font-size: var(--h1-font-size-mobile);
+  line-height: var(--h1-line-height-mobile);
+  letter-spacing: var(--h1-letter-spacing-mobile);
+  font-weight: var(--headings-font-weight);
+
+  @include md {
+    font-size: var(--h1-font-size-desktop);
+    line-height: var(--h1-line-height-desktop);
+    letter-spacing: var(--h1-letter-spacing-desktop);
+  }
+}
+
+@mixin h2 {
+  @include headings-font;
+
+  font-size: var(--h2-font-size-mobile);
+  line-height: var(--h2-line-height-mobile);
+  letter-spacing: var(--h2-letter-spacing-mobile);
+  font-weight: var(--headings-font-weight);
+
+  @include md {
+    font-size: var(--h2-font-size-desktop);
+    line-height: var(--h2-line-height-desktop);
+    letter-spacing: var(--h2-letter-spacing-desktop);
+  }
+}
+
+@mixin h3 {
+  @include headings-font;
+
+  font-size: var(--h3-font-size-mobile);
+  line-height: var(--h3-line-height-mobile);
+  letter-spacing: var(--h3-letter-spacing-mobile);
+
+  @include md {
+    font-size: var(--h3-font-size-desktop);
+    line-height: var(--h3-line-height-desktop);
+    letter-spacing: var(--h3-letter-spacing-desktop);
+  }
+}
+
+@mixin h4 {
+  @include headings-font;
+
+  font-size: var(--h4-font-size-mobile);
+  line-height: var(--h4-line-height-mobile);
+
+  @include md {
+    font-size: var(--h4-font-size-desktop);
+    line-height: var(--h4-line-height-desktop);
+  }
+}
+
+@mixin h5 {
+  @include headings-font;
+
+  font-size: var(--h5-font-size-mobile);
+  line-height: var(--h5-line-height-mobile);
+
+  @include md {
+    font-size: var(--h5-font-size-desktop);
+    line-height: var(--h5-line-height-desktop);
+  }
+}
+
+@mixin paragraph {
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+}
+
+@mixin link {
+  font-size: var(--link-font-size);
+  line-height: var(--link-line-height);
+}
+
+h1,
+.h1 {
+  @include h1;
+}
+
+h2,
+.h2 {
+  @include h2;
+}
+
+h3,
+.h3 {
+  @include h3;
+}
+
+h4,
+.h4 {
+  @include h4;
+}
+
+h5,
+.h5 {
+  @include h5;
+}
+
+p,
+.p {
+  @include paragraph;
+}
+
+a,
+.link {
+  @include link;
+}

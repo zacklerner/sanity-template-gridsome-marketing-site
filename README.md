@@ -1,0 +1,2 @@
+## Marketing Site with Gridsome
+### Heavy.Dev's Gridsome marketing site starter with structured content from Sanity.io. Built on top of, and very heavily indebted to, the sanity-template-gridsome-blog starter! 

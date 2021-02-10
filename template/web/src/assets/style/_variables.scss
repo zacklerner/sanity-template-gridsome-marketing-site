@@ -1,0 +1,23 @@
+body {
+  --color--primary: #0F2D44;
+  --color--primary-lt: #F0FDF2;
+  --color--primary-dk: #0D2538;
+  --color--secondary: #AF9CEF;
+  --color--secondary-lt: #CED8DE;
+  --color--secondary-dk: #6b17e6;
+  --color--gray: #6A6F6B;
+  --color--gray-lt: #cccccc;
+  --color--white: #fff;
+  --color--black: #000;
+  --color--black03: rgba(0, 0, 0, 0.3);
+
+  --header-height: 80px;
+  --space: 3.5rem;
+}
+
+// Make  things smaller for mobile
+@media screen and (max-width: 650px) {
+  body {
+    --header-height: 60px;
+  }
+}
