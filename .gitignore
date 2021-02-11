@@ -2,10 +2,10 @@
 .DS_Store
 
 # Dependency directories
-/node_modules
+node_modules/
 
 # lerna files
-/lerna-debug.log
+lerna-debug.log
 
 # VS Code Config
 .vscode/
