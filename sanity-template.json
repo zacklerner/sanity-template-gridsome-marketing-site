@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 0,
   "title": "Heavy.Dev marketing site starter template for Gridsome/Sanity.io.",
   "description": "A somewhat opinionated starter theme for a Gridsome/Sanity.io marketing site deployed on Netlify.",
   "previewMedia": {
@@ -19,61 +19,60 @@
       "url": "https://www.netlify.com/"
     }
   ],
-  "deployment": {
-    "provider": "netlify",
-    "sites": [
-      {
-        "id": "studio",
-        "type": "studio",
-        "title": "Sanity Studio",
-        "description": "The Sanity Studio is where you edit and structure your content.",
-        "dir": "./studio",
-        "previewMedia": {
-          "type": "image",
-          "src": "assets/studio.png",
-          "alt": "A preview image of the Sanity Studio."
-        },
-        "buildSettings": {
+  "deployments": [
+    {
+      "id": "studio",
+      "type": "studio",
+      "title": "Sanity Studio",
+      "description": "The Sanity Studio is where you edit and structure your content.",
+      "dir": "./studio",
+      "provider": {
+        "name": "netlify",
+        "config": {
           "base": "/",
           "dir": "/studio/dist",
           "cmd": "npm run build-studio && cp ./studio/netlify.toml ./studio/dist"
         },
-        "requirements": [
-          "build-hook"
-        ]
+        "requirements": ["build-hook"]
       },
-      {
-        "id": "web",
-        "type": "web",
-        "title": "Blog Website",
-        "description": "A fast by default blog, made for being easy to customize and update.",
-        "dir": "./web",
-        "buildSettings": {
+      "previewMedia": {
+        "type": "image",
+        "src": "assets/sanity.jpg",
+        "alt": "A preview image of the Sanity Studio."
+      }
+    },
+    {
+      "id": "web",
+      "type": "web",
+      "title": "Blog Website",
+      "description": "A fast by default blog, made for being easy to customize and update.",
+      "dir": "./web",
+      "requiredTokens": [
+        {
+          "role": "deploy-studio",
+          "label": "GraphQL API Deployer"
+        }
+      ],
+      "provider": {
+        "name": "netlify",
+        "config": {
           "base": "/",
           "dir": "/web/dist",
           "cmd": "npm run build-web"
         },
-        "previewMedia": {
-          "type": "image",
-          "src": "assets/frontend.png",
-          "alt": "A preview image of the blog website."
-        },
-        "requiredCorsOrigins": [
-          {
-            "origin": "http://localhost:8080",
-            "allowCredentials": false
-          }
-        ],
-        "requiredTokens": [
-          {
-            "role": "deploy-studio",
-            "label": "GraphQL API Deployer"
-          }
-        ],
-        "requirements": [
-          "build-hook"
-        ]
-      }
-    ]
-  }
+        "requirements": ["build-hook"]
+      },
+      "previewMedia": {
+        "type": "image",
+        "src": "assets/gridsome.png",
+        "alt": "A preview image of the blog website."
+      },
+      "requiredCorsOrigins": [
+        {
+          "origin": "http://localhost:8080",
+          "allowCredentials": false
+        }
+      ]
+    }
+  ]
 }
