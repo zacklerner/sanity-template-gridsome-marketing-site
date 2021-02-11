@@ -1,1 +1,1 @@
-# heavy-dev-sanity-gridsome-base-studio
+# <#< repository.name >#>-studio

@@ -1,0 +1,37 @@
+
+{
+  "repository": {
+    "name": "sanity-gridsome-marketing-site",
+    "owner": "zacklerner",
+    "private": false
+  },
+  "sanity": {
+    "dataset": "production",
+    "projectId": "4xbp7vhq",
+    "projectTitle": "Gridsome Marketing Site (dev)"
+  },
+  "user": {
+    "profileImage": "https://avatars.githubusercontent.com/u/47871627?s=460&u=d6df58a80a16fd43ee291f877de98157a0e1eecd&v=4",
+    "displayName": "Zack Lerner",
+    "email": "zack@zacklerner.com"
+  },
+  "userInput": {},
+  "deployments": {
+    "studio": {
+      "url": "https://staging--heavy-dev-sanity-gridsome-base-studio.netlify.com/",
+      "providerName": "netlify",
+      "providerInfo": {
+        "buildHookId": "60065d62685d266e55d72805",
+        "siteId": "2da3f745-3487-4282-951f-eb98e89d5894"
+      }
+    },
+    "web": {
+      "url": "https://staging--heavy-dev-sanity-gridsome-base.netlify.com/",
+      "providerName": "netlify",
+      "providerInfo": {
+        "buildHookId": "60065d209d075275202e9daa",
+        "siteId": "6fe19f5d-5eaa-4513-9583-06f14dd5fcb8"
+      }
+    }
+  }
+}

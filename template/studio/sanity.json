@@ -1,11 +1,11 @@
 {
   "root": true,
   "project": {
-    "name": "Heavy.Dev Sanity Gridsome Base"
+    "name": "<#< sanity.projectTitle >#>"
   },
   "api": {
-    "projectId": "4xbp7vhq",
-    "dataset": "production"
+    "projectId": "<#< sanity.projectId >#>",
+    "dataset": "<#< sanity.dataset >#>"
   },
   "plugins": [
     "@sanity/base",

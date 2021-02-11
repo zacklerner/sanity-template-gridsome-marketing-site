@@ -1,8 +1,8 @@
-# Heavy.Dev Sanity Gridsome Marketing Site Template
+# <#< sanity.projectTitle >#>
 
 _Fully customizable marketing site template with a Vue.js front-end._
 
-Deployed from [sanity.io/create](https://www.sanity.io/create/?template=sanity-io%2Fsanity-template-gridsome-marketing-site).
+Deployed from [sanity.io/create](https://www.sanity.io/create/?template=zacklerner%2Fsanity-template-gridsome-marketing-site).
 
 ![The Sanity and Gridsome powered blog](https://github.com/zacklerner/sanity-template-gridsome-marketing-site/blob/master/assets/preview.png?raw=true)
 
