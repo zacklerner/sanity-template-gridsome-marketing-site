@@ -3,7 +3,7 @@ export default {
     {
       name: 'sanity-tutorials',
       options: {
-        templateRepoId: 'zacklerner/sanity-template-gridsome-marketing-site'
+        templateRepoId: 'sanity-io/sanity-template-gridsome-blog'
       }
     },
     {name: 'structure-menu'},
